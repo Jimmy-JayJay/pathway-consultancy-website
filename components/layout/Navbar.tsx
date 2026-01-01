@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Menu, X } from "lucide-react";
 import { Container } from "@/components/ui/container";
 import { Button } from "@/components/ui/button";
@@ -54,10 +55,13 @@ export function Navbar() {
       <Container className="flex items-center justify-between">
         <Link href="/" className="flex items-center gap-3" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
             <div className="relative w-10 h-10 overflow-hidden rounded-full border-2 border-white/20">
-                <img 
-                    src="/icon.png" 
+                <Image 
+                    src="/PATHWAY LOGO.jpg" 
                     alt="Pathway Consultancy Logo" 
-                    className="object-cover w-full h-full"
+                    fill
+                    className="object-cover"
+                    sizes="40px"
+                    priority
                 />
             </div>
             <span className={cn("text-xl font-bold tracking-tight", isScrolled ? "text-[var(--primary)]" : "text-white")}>
