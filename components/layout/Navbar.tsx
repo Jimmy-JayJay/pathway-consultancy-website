@@ -56,7 +56,7 @@ export function Navbar() {
         <Link href="/" className="flex items-center gap-3" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
             <div className="relative w-10 h-10 overflow-hidden rounded-full border-2 border-white/20">
                 <Image 
-                    src="/PATHWAY LOGO.jpg" 
+                    src="/icon.png" 
                     alt="Pathway Consultancy Logo" 
                     fill
                     className="object-cover"

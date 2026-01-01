@@ -23,7 +23,7 @@ export function About() {
              </div>
             <p className="text-slate-600 text-lg leading-relaxed">
               Pathway Consultancy is an  organization founded in 2022 by 
-              Henderson Chiotcha from Malawi University of Science & Technology. 
+              Henderson Chiotcha from the Malawi University of Science & Technology. 
               We are committed to providing exceptional services to individuals 
               seeking guidance in personal and professional development.
             </p>
