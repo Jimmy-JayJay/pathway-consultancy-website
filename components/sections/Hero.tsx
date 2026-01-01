@@ -3,6 +3,7 @@
 import { Container } from "@/components/ui/container";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export function Hero() {
 
@@ -22,10 +23,16 @@ export function Hero() {
   return (
     <section id="home" className="relative h-screen flex items-center justify-center overflow-hidden">
       {/* Background with Overlay */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center z-0"
-        style={{ backgroundImage: "url('https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80')" }}
-      />
+      <div className="absolute inset-0 z-0 select-none">
+        <Image
+          src="/pathway team.jpg"
+          alt="Pathway Consultancy Team"
+          fill
+          className="object-cover"
+          priority
+          quality={85}
+        />
+      </div>
       <div className="absolute inset-0 bg-gradient-to-b from-[var(--primary)]/90 to-[var(--primary)]/80 z-10" />
 
       <Container className="relative z-20 text-center text-white">
