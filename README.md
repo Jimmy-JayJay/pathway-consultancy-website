@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Pathway Consultancy Website (Next.js Version)
 
-## Getting Started
+This is the advanced, dynamic version of the Pathway Consultancy website, built with **Next.js 15 (App Router)** and **Tailwind CSS**.
 
-First, run the development server:
+##  Project Structure
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- `app/`: Contains the routes and layout.
+    - `layout.tsx`: Root layout with 'Inter' font and metadata.
+    - `page.tsx`: Landing page composition.
+    - `globals.css`: Tailwind configuration and custom color variables.
+- `components/`: Modular UI components.
+    - `layout/`: Navbar, Footer.
+    - `sections/`: Hero, About, Vision, Services, Team, Contact.
+    - `ui/`: Reusable primitives (Button, Container).
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+##  Getting Started
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+2.  **Run the development server:**
+    ```bash
+    npm run dev
+    ```
 
-## Learn More
+3.  Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-To learn more about Next.js, take a look at the following resources:
+##  Key Features
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+-   **Framework**: Next.js 15 (App Router) for Server Side Rendering and SEO.
+-   **Styling**: Tailwind CSS v3/v4 for utility-first styling.
+-   **Icons**: `lucide-react` for clean, professional SVG icons (replaced emojis).
+-   **Structure**: Highly modular component architecture for easy maintenance.
+-   **Theme**: Deep Blue (`#0c3b5d`) and Gold (`#dda517`) corporate identity.
+-   **Animations**: Framer Motion integrated for the Hero section entrance.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+##  Future Improvements
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+-   **Contact Form**: Wire up the "Send Message" button to an actual API route (e.g., Resend or SendGrid).
+-   **CMS**: Connect the content in `components/sections` to a Headless CMS (Sanity.io) so non-developers can edit text.
