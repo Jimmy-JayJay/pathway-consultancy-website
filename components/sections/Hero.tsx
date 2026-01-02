@@ -25,7 +25,7 @@ export function Hero() {
       {/* Background with Overlay */}
       <div className="absolute inset-0 z-0 select-none">
         <Image
-          src="/pathway team.jpg"
+          src="/pathway-team.jpg"
           alt="Pathway Consultancy Team"
           fill
           className="object-cover"
